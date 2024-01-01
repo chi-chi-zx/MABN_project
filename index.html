@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Test-Time Domain Adaptation by Learning Domain-Aware Batch Normalization</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo512.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -44,6 +44,9 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <body>
 
 
@@ -52,20 +55,25 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Test-Time Domain Adaptation by Learning Domain-Aware Batch Normalization</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                Yanan Wu</a><sup>1*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  Zhixiang Chi</a><sup>2*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    Yang Wang</a><sup>3</sup>,</span>
+					<span class="author-block">
+                    Konstantinos N. Plataniotis</a><sup>2</sup>,</span>
+					<span class="author-block">
+                    Songhe Feng</a><sup>1</sup></span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block"><sup>1</sup>Beijing Jiaotong University, <sup>2</sup>University of Toronto,<sup>3</sup>Concordia University
+					<br>AAAI 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -73,7 +81,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2312.10165.pdf<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -84,7 +92,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://arxiv.org/pdf/2312.10165.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -95,7 +103,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/ynanwu/MABN" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +114,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/pdf/2312.10165.pdf<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -124,189 +132,182 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+	  <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
+        <!-- <source src="static/videos/banner_video.mp4" -->
+        <!-- type="video/mp4"> -->
+      <!-- </video> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<hr>
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Test-time domain adaptation aims to adapt the model trained on source domains to unseen target domains using a few unlabeled images. Emerging research has shown that the label and domain information is separately embedded in the weight matrix and batch normalization (BN) layer. Previous works normally update the whole network naively without explicitly decoupling the knowledge between label and domain. As a result, it leads to knowledge interference and defective distribution adaptation. In this work, we propose to reduce such learning interference and elevate the domain knowledge learning by only manipulating the BN layer. However, the normalization step in BN is intrinsically unstable when the statistics are re-estimated from a few samples. We find that ambiguities can be greatly reduced when only updating the two affine parameters in BN while keeping the source domain statistics. To further enhance the domain knowledge extraction from unlabeled data, we construct an auxiliary branch with label-independent self-supervised learning (SSL) to provide supervision. Moreover, we propose a bi-level optimization based on meta-learning to enforce the alignment of two learning objectives of auxiliary and main branches. The goal is to use the auxiliary branch to adapt the domain and benefit main task for subsequent inference. Our method keeps the same computational cost at inference as the auxiliary branch can be thoroughly discarded after adaptation. Extensive experiments show that our method outperforms the prior works on five WILDS real-world domain shift datasets. Our method can also be integrated with methods with label-dependent optimization to further push the performance boundary.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+		
+		
+		
+		
+		
+		
+		
+		<hr>
+		<h2 class="title is-3">Problem Setting</h2>
+		<!-- Your image here -->
+		<img src="static/images/setting.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<br>
+		<div class="content has-text-justified">
+          <p>
+			<br>Unsupervised Domain Adaptation (UDA) allows for the use of unlabeled data from a target domain during training, and knowledge is transferred from the data from source domains. However, it is less applicable in real-world scenarios as it requires repetitive large-scale training for every target domain.
+			<br>
+			<br>Domain Generalization (DG) operates under the assumption that the prior knowledge of target domains is unknown. It expects that the model trained on a source domain will perform well across all target domains. While DG is more practical, it is often less optimal since it does not adapt to the domain-specific knowledge of the target domains.
+			<br>
+		    <br>In this work, we focus on the problem of Test-time Domain Adaptation (TTDA) or Few-shot TTDA, which somehow combines UDA and DG. It follows the source-free setting as in DG but requires an additional learning phase at test-time for each of the target domain: when an unseen target domain is encountered at test-time, a few unlabeled images are sampled to update the model towards that domain. The adapted model is then used for testing the data in that domain (as shown in the figure above). 
+          </p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+		
+		
+		
+		<hr>
+		<h2 class="title is-3">Motivation</h2>
+		<!-- Your image here -->
+		<img src="static/images/motivation.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<br>
+		<div class="content has-text-justified">
+          <p>
+			<br>Our work is partly inspired by the observation that the weight matrix tends to encapsulate label information, while domain-specific knowledge is embedded within the BN layer. We propose a strategic manipulation of the BN layer to optimize the acquisition and transference of domain-specific knowledge. The BN layer normalizes the input feature followed by re-scaling and shifting using two affine parameters. However, the normalization statistics computed for the target domain under TT-DA can be unstable since we only have a small batch of examples from the target domain. Instead, we propose to only adapt the two affine parameters while directly using the normalization statistics learned from source domains during training. We further use self-supervised learning method to update the affines on unlabeled target data.
+			</p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+		
+		
+		
+		<hr>
+		<h2 class="title is-3">Method Overview</h2>
+		<!-- Your image here -->
+		<img src="static/images/overview.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<br>
+		<div class="content has-text-justified">
+          <p>
+			<br>To learn a good initialization for the affine parameters that are suitable to adapt domain-specific information, we employ two stage of learning process. In the joint training stage (a), we train the entire network to learn both label knowledge and normalization statistics by mixing all the source data and performing joint training. During the meta-auxiliary training stage (b), we first obtain the adapted parameters based on the auxiliary loss in the inner loop. Then, the meta-model is updated at the outer loop based on the main task loss computed on adapted parameters. At test-time (c), we simply apply the adaptation step to update the model specifically to an unseen target domain.
+			</p>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+		
+		<hr>
+		<h2 class="title is-3">Experimental Results</h2>
+		<!-- Your image here -->
+		<img src="static/images/table_1.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<div class="content has-text-justified">
+          <p>
+			Comparison with the state-of-the-arts on the WILDS benchmark under the out-of-distribution setting. 
+			</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+		
+		
+		<!-- Your image here -->
+		<img src="static/images/table_2.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<div class="content has-text-justified">
+          <p>
+			Comparison with the state-of-the-arts on the DomainNet benchmark under the leave-one-out setting. 
+			</p>
+        </div>
+		
+		<!-- Your image here -->
+		<img src="static/images/table_3.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<div class="content has-text-justified">
+          <p>
+			Verification of domain knowledge learning. ``No adapt" means the meta-learned \( \gamma, \beta \) are used for all domains without adaptation. ``Not matched" means each target domain randomly uses the adapted \(\tilde{\gamma}, \tilde{\beta}\) from other domains instead of its own. ``Matched" means each target domain uses its own adapted \(\tilde{\gamma}, \tilde{\beta}\).
+			</p>
+        </div>
+		
+		
+		<hr>
+		<img src="static/images/visual.png" alt="MY ALT TEXT" class="center-img"/>
+		
+		<div class="content has-text-justified">
+          <p>
+			t-SNE visualization of features before and after adaptation. Each data sample is represented as a point, and each color corresponds to a class randomly selected from the target domain of the iWildCam dataset.
+			</p>
+        </div>
+		
+		
+		
+		
+		<!--End BibTex citation -->
+		
+		<!-- <footer class="footer"> -->
+		  <!-- <div class="container"> -->
+			<!-- <div class="columns is-centered"> -->
+			  <!-- <div class="column is-8"> -->
+				<!-- <div class="content"> -->
 
+				  <!-- <p> -->
+					<!-- Add the footer/contact -->
+				  <!-- </p> -->
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+				<!-- </div> -->
+			  <!-- </div> -->
+			<!-- </div> -->
+		  <!-- </div> -->
+		<!-- </footer> -->
         
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
+<hr>
+		<!--BibTex citation -->
+		<section class="section" id="BibTeX">
+		<div class="container is-max-desktop content">
+		  <h2 class="title">Citation</h2>
+		  <pre><code>@InProceedings{wu2023test,
+		   title={Test-Time Domain Adaptation by Learning Domain-Aware Batch Normalization},
+		   author={Yanan Wu, Zhixiang Chi, Yang Wang, Konstantinos N. Plataniotis, Songhe Feng},
+		   booktitle={AAAI Conference on Artificial Intelligence},
+		   year={2024}}</code></pre>
+		</div>
+		</section>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
+          <p>
+            This website template was adapted from <a href="https://nerfies.github.io/">Nerfies website</a>. 
+          </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
